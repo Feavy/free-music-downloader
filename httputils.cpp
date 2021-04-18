@@ -39,7 +39,7 @@ void sigUrl(QString &url){
 
         N *= 0.1;
     }
-    N = round(N*1000);
+    N = qRound(N*1000);
 
     url += "&s="+QString::number(N);
 }
